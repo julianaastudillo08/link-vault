@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Link Vault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Link Vault</h1>
+    <p>Bookmarks with tags · search · localStorage</p>
+  </header>
+  <main>
+    <form id="form" class="form">
+      <input id="title" placeholder="Title" required />
+      <input id="url" type="url" placeholder="https://" required />
+      <input id="tags" placeholder="tags (comma)" />
+      <button type="submit">Add</button>
+    </form>
+    <div class="filters">
+      <input id="q" placeholder="Search…" />
+      <div id="tagCloud" class="tags"></div>
+    </div>
+    <ul id="list" class="list"></ul>
+  </main>
+  <footer>Crafted by <strong>Juliana Chantre Astudillo</strong></footer>
+  <script src="app.js"></script>
+</body>
+</html>
